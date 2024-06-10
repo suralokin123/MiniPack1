@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Onest', sans-serif;
+  font-style: normal;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    padding:20px 0;
+}
+
+.text-contact {
+  font-weight: 400;
+  font-size: 14px;
+  color: #7e7e7e;
+  margin-bottom: 20px;
+}
+
+.main-contact {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100%;
+  color: #1d1e1c;
+  margin-bottom: 40px;
+}
+.places__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact-place {
+  max-width: 585px;
+}
+.text-place {
+  font-weight: 800;
+  font-size: 25px;
+  color: #1d1e1c;
+  margin-bottom: 20px;
+}
+
+.contact__desc {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  column-gap: 15px;
+  margin-bottom: 30px;
+}
+
+.contact__current {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 285px;
+}
+
+.contact-text {
+  font-weight: 300;
+  font-size: 17px;
+  color: #4f504e;
+
+  span {
+    font-weight: 600;
+    color: #1d1e1c;
+  }
+}
+
+.mail1 {
+  font-weight: 300;
+  font-size: 17px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #eb6725;
+}
+.map {
+  margin-bottom: 40px;
+  display: block;
+  width: 585px;
+  height: 460px;
+}
+
+.rekvisiti {
+  h2 {
+    font-weight: 800;
+    font-size: 25px;
+    color: #1d1e1c;
+    margin-bottom: 20px;
+  }
+}
+.rekvisit {
+  max-width: 585px;
+}
+.text-rekvisit {
+  font-weight: 300;
+  font-size: 17px;
+  color: #4f504e;
+  line-height: 22px;
+}
+
+@media (max-width: 1200px) {
+  .contact__wrapper {
+    padding: 0 10px;
+  }
+  .places__wrapper {
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 585px) {
+  .contact-place {
+    max-width: 310px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .rekvisit {
+    max-width: 310px;
+  }
+  .map {
+    width: 310px; /* остальные стили */
+    height: 600px; /* остальные стили */
+  }
+  .contact__desc {
+    order:-1;
+  }
+
+  .text-place {
+    order:1;
+  }
+
+  .rekvisiti {
+    order:-2;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact-place {
+    max-width: 310px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .rekvisit {
+    max-width: 310px;
+  }
+  .map {
+    width: 310px; /* остальные стили */
+    height: 600px; /* остальные стили */
+  }
+  .contact__desc {
+    order:-1;
+  }
+
+  .text-place {
+    order:1;
+  }
+
+  .rekvisiti {
+    order:-2;
+  }
+}
